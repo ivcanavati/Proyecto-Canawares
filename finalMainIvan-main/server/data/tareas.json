@@ -1,0 +1,29 @@
+[{
+    "nombreTarea": "Matemáticas",
+    "fechaLimite": "10/12/2021",
+    "uid": 10005,
+    "descripcion": "Tarea de Matemáticas",
+    "fechaDeEntrega": "No se ha entregado",
+    "puntaje": 0
+}, {
+    "nombreTarea": "Geografía",
+    "fechaLimite": "10/12/2021",
+    "uid": 10005,
+    "descripcion": "Tarea de Geografía",
+    "fechaDeEntrega": "No se ha entregado",
+    "puntaje": 0
+}, {
+    "nombreTarea": "Español",
+    "fechaLimite": "10/12/2021",
+    "uid": 10005,
+    "descripcion": "Tarea de Español",
+    "fechaDeEntrega": "No se ha entregado",
+    "puntaje": 0
+}, {
+    "nombreTarea": "Computación",
+    "fechaLimite": "10/12/2021",
+    "uid": 10005,
+    "descripcion": "Tarea de Computación",
+    "fechaDeEntrega": "No se ha entregado",
+    "puntaje": 0
+}]

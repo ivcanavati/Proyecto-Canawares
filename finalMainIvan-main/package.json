@@ -1,0 +1,53 @@
+{
+  "name": "ivan",
+  "version": "1.0.0",
+  "description": "node.js + express",
+  "config": {
+    "entrypoint": "server/server.js"
+  },
+  "scripts": {
+    "dev": "nodemon server/server.js",
+    "start": "node server/server.js",
+    "check-coverage": "nyc report --check-coverage --lines 100",
+    "lint": "eslint --ignore-path .gitignore .",
+    "fix": "eslint --ignore-path .gitignore . --fix",
+    "test": "nyc mocha test --recursive --exit"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "per-file": true,
+    "lines": 100,
+    "statements": 100,
+    "functions": 100,
+    "branches": 100,
+    "exclude": [
+      "test"
+    ],
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "helmet": "^4.2.0",
+    "randomatic": "^3.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^7.12.1",
+    "eslint-config-strongloop": "^2.1.0",
+    "husky": "^4.3.0",
+    "mocha": "^8.2.1",
+    "mock-require": "^3.0.3",
+    "nodemon": "^2.0.6",
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.1",
+    "sinon-chai": "^3.5.0",
+    "supertest": "^6.0.1"
+  }
+}
